@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FriendView">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvId"
+                android:text="ID"
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/etID"
+                android:layout_marginTop="5dp"
+                android:inputType="text"
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                tools:ignore="Autofill,LabelFor" />
+            <TextView
+                android:id="@+id/tvName"
+                android:text="Name *)"
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/etName"
+                android:layout_marginTop="5dp"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="Autofill,LabelFor" />
+            <TextView
+                android:id="@+id/tvDescription"
+                android:text="Description"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/etDescription"
+                android:layout_marginTop="5dp"
+                android:inputType="textMultiLine"
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:gravity="top|start"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                tools:ignore="Autofill,LabelFor" />
+            <TextView
+                android:id="@+id/tvCharacter"
+                android:text="Character*)"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/etCharacter"
+                android:layout_marginTop="5dp"
+                android:inputType="phone"
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="Autofill,LabelFor" />
+
+            <Button
+                android:id="@+id/btSimpan"
+                android:text="Simpan"
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
